@@ -12,10 +12,10 @@ router.get('/', (req, res, next) => {
       return next(err);
     }
     
-    const data = {
+    const pictureData = {
       pictures: pictures
     }
-    res.render('index', data);
+    res.render('index', pictureData);
   })
 });
 
